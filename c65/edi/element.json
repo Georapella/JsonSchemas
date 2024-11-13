@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "ediElement",
+    "title": "EDI Element",
+    "description": "C65 EDI Element",
+    "type": "object",
+    "properties":{
+        "uid": { "type": "integer" },
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "desc": { "type": "string" },
+        "typeId": { "type": "string" },
+
+        "minLength": { "type": "integer" },
+        "maxLength": { "type": "integer" },
+        "codes": {"$ref": "file:ediElementCode.json" },
+
+        "usageType": { "type": "string" },
+        "requirement": { "type": "string" },
+        "sequence": { "type": "string" },
+        "components": { 
+            "type": "array",
+            "items": { "$ref": "#" }
+        }
+        
+    },
+    "required": [ "uid", "id", "name", "desc", "typeId" ]
+}
