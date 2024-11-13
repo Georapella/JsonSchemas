@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "ediElementCode",
+    "$id": "https://raw.githubusercontent.com/Georapella/JsonSchemas/refs/heads/main/c65/edi/elementCode.json",
     "title": "EDI Element Code",
     "description": "C65 EDI Element Code",
     "type": "object",
